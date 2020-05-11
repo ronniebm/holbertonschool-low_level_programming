@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+int b;				/* declaro las variables */
+int s;				/* variable s tipo entero */
+
+for (b = '0'; b <= '9' ; b++)	/* Hola este es un ejemplo */
+{
+for (s = '0'; s <= '9'; s++) 	/* probemos que tal funciona */
+{
+if (s > b)
+{
+putchar(b);
+putchar(s);
+if (b == '8' && s == '9')
+{
+putchar('\n');
+}
+else
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+return (0);
+}
