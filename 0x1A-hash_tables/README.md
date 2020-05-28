@@ -1,4 +1,4 @@
-|![enter image description here](https://cdn1.iconfinder.com/data/icons/hawcons/32/698336-icon-88-document-file-c-512.png)|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOLBERTON school Project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 28th 2020.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*< 0x1A. C - Hash tables >*|
+|![enter image description here](https://cdn0.iconfinder.com/data/icons/file-format-programming-language-scripts-glyph-1/64/file_format_document-12-128.png)|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOLBERTON school Project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 28th 2020.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*< 0x1A. C - Hash tables >*|
 |--|--|  
 
 ### **1. Resources**  
