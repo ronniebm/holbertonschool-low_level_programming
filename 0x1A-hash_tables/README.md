@@ -1,4 +1,4 @@
-|![enter image description here](https://1.bp.blogspot.com/-q5IliaSxM0Q/Tp2M2Y1vwKI/AAAAAAAAA4I/RXcz6Hisb9Q/s1600/text-x-python.png)|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOLBERTON school Project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 28th 2020.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*< 0x1A. C - Hash tables >*|
+|![enter image description here](https://cdn1.iconfinder.com/data/icons/hawcons/32/698336-icon-88-document-file-c-512.png)|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOLBERTON school Project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 28th 2020.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*< 0x1A. C - Hash tables >*|
 |--|--|  
 
 ### **1. Resources**  
