@@ -11,7 +11,7 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *ptr = NULL;
 	unsigned long int index = 0, counter = 0, i;
 
-	/*checking hash table, array, value and key*/
+	/*checking given hash table*/
 	if (!ht || !(ht->array))
 		return;
 
