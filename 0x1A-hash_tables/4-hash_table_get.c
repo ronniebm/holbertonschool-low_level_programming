@@ -19,13 +19,14 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	index = key_index((unsigned char *)key, ht->size);
 	ptr = ht->array[index];
 
+	/*traversing hash nodes*/
 	while (ptr)
 	{
 		if (strcmp(ptr->key, key) == 0)
-			{
-				return (ptr->value);
-			}
-			ptr = ptr->next;
+		{
+			return (ptr->value);
+		}
+		ptr = ptr->next;
 	}
 	return (NULL);
 }
