@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new_node = NULL, *test = NULL;
 
 	/*checking hash table, array, value and key*/
-	if (!ht || !(ht->array) || !value || !key || strlen(key) == 0)
+	if (!ht || !(ht->array) || !value || !key)
 		return (0);
 
 	index = key_index((unsigned char *)key, ht->size);
@@ -43,10 +43,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
 
-	printf("hash: %lu ", hash_djb2((const unsigned char *)key));
-	printf("index: %ld\n", index);
-	printf("key: %s, value: %s\n", (ht->array[index])->key, (ht->array[index])->value);
-	printf("new node: %s, value: %s\n", new_node->key, new_node->value);
-	printf("hash table size: %lu, array[%ld]: %p\n", ht->size, index, (void *)ht->array);
 	return (1);
 }
