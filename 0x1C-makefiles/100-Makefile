@@ -1,11 +1,10 @@
-# Makefile
+# MakeFile
 
 CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
 SRC = main.c holberton.c
-OBJ = $(subst .c,.o, $(SRC))
+OBJ = $(patsubst %.c, %.o, $(SRC))
 NAME = holberton
-RM = rm
-CFLAGS= -Wall -Werror -Wextra -pedantic
 
 .PHONY: all clean oclean fclean re
 
