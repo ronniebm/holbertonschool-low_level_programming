@@ -1,3 +1,5 @@
+# Makefile
+
 CC = gcc
 SRC = main.c holberton.c
 OBJ = $(subst .c,.o, $(SRC))
