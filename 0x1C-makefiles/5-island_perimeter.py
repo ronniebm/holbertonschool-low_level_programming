@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""5-island_perimeter.py module"""
+"""
+5-island_perimeter.py module
+"""
+
 
 def island_perimeter(grid):
     """
@@ -18,11 +21,6 @@ def island_perimeter(grid):
     rows = len(grid)
     cols = len(grid[0])
     perimeter = 0
-
-    # verifying if it's a rectangular matrix.
-    for i in range(0, rows):
-        if len(grid[i]) != cols:
-            return("it's not a rectangular matrix")
 
     # checking every position to find land portions (1's).
     for i in range(0, rows):
@@ -61,7 +59,7 @@ def contiguous_cells(grid, i, j, rows, cols):
         counter += 1
 
     # amount of island cells down.
-    if (i < rows - 1 and grid[i + 1][j]): 
+    if (i < rows - 1 and grid[i + 1][j]):
         counter += 1
 
     # amount of island cells to the right.
