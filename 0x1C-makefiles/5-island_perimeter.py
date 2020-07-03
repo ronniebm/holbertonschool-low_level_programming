@@ -19,11 +19,6 @@ def island_perimeter(grid):
     cols = len(grid[0])
     perimeter = 0
 
-    # verifying if it's a rectangular matrix.
-    for i in range(0, rows):
-        if len(grid[i]) != cols:
-            return("it's not a rectangular matrix")
-
     # checking every position to find land portions (1's).
     for i in range(0, rows):
         for j in range(0, cols):
