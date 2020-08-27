@@ -55,13 +55,12 @@ int b_search_rec(int *array, int left, int right, int val)
 
 int binary_search(int *array, size_t size, int value)
 {
-	int right = (int)size - 1;
-	int left = 0;
 
-	if (!array)
-	{
+	if (array == NULL)
 		return (-1);
-	}
+	
+	int left = 0;
+	int right = (int)size - 1; 
 
 	return (b_search_rec(array, left, right, value));
 }
