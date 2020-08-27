@@ -58,9 +58,9 @@ int binary_search(int *array, size_t size, int value)
 
 	if (array == NULL)
 		return (-1);
-	
+
 	int left = 0;
-	int right = (int)size - 1; 
+	int right = (int)size - 1;
 
 	return (b_search_rec(array, left, right, value));
 }
