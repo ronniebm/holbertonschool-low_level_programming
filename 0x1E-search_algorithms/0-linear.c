@@ -6,7 +6,7 @@
  * @size: size of array (signed int).
  * @value: value to be searched (int).
  *
- * Return: Nothing.
+ * Return: index pos. if match, -1 if not found or NULL array.
  */
 
 int linear_search(int *array, size_t size, int value)
@@ -27,5 +27,6 @@ for (i = 0; i <= max; i++)
 		return (i);
 		}
 }
+
 return (-1);
 }
