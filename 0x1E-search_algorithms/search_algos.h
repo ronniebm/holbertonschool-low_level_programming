@@ -5,6 +5,6 @@
 
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
-int b_search_rec(int *array, int left, int right, int val);
+void print(int *array, int left, int right);
 
-#endif /* _CALC_H_ */
+#endif

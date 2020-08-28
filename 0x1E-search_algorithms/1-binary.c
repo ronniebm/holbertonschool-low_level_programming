@@ -1,33 +1,26 @@
 #include "search_algos.h"
 
-/**
- * b_search_rec - binary search recursion aux.function.
- * @array: pointer to array of integers.
- * @left: left index position for eval start in the array.
- * @right: right index position for eval end in the array.
- * @val: value to be searched inside the array (int).
- *
- * Return: index pos. if match, -1 if not found.
- */
 
-int b_search_rec(int *array, int left, int right, int val)
+/**
+ * print - it prints a given array.
+ *
+ * @array: pointer of the given array.
+ * @left: first index in the given array.
+ * @right: last index in the given array.
+ */
+void print(int *array, int left, int right)
 {
-	int mid = left + (right - left) / 2;
+	int i;
 
 	printf("Searching in array: ");
 
-	if (array[mid] == val)
-		return (mid);
-
-	if (right > left)
+	for (i = left; i < right - 1; i++)
 	{
-		if (array[mid] > val)
-			return (b_search_rec(array, left, mid - 1, val));
-		else
-			return (b_search_rec(array, mid + 1, right, val));
+		printf("%d, ", array[i]);
 	}
 
-	return (-1);
+	printf("%d\n", array[i]);
+
 }
 
 
@@ -42,12 +35,30 @@ int b_search_rec(int *array, int left, int right, int val)
 
 int binary_search(int *array, size_t size, int value)
 {
+	int left, right, mid;
 
-	if (array == NULL)
+	if (!array)
 		return (-1);
 
-	int left = 0;
-	int right = (int)size - 1;
+	left = 0;
+	right = (int)size - 1;
 
-	return (b_search_rec(array, left, right, value));
+	while (left <= right)
+	{
+		print(array, left, (right + 1));
+
+		mid = (left + right) / 2;
+
+		if (array[mid] == value)
+			return (mid);
+
+		if (array[mid] > value)
+			right = mid;
+
+		else if (array[mid] < value)
+			left = (mid + 1);
+	}
+
+	return (-1);
 }
+
