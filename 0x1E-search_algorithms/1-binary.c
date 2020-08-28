@@ -8,9 +8,9 @@
  * @left: first index in the given array.
  * @right: last index in the given array.
  */
-void print(int *array, int left, int right)
+void print(int *array, size_t left, size_t right)
 {
-	int i;
+	size_t i;
 
 	printf("Searching in array: ");
 
@@ -35,13 +35,13 @@ void print(int *array, int left, int right)
 
 int binary_search(int *array, size_t size, int value)
 {
-	int left, right, mid;
+	size_t left, right, mid;
 
 	if (!array)
 		return (-1);
 
 	left = 0;
-	right = (int)size - 1;
+	right = size - 1;
 
 	while (left <= right)
 	{
