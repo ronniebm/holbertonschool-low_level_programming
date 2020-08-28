@@ -12,32 +12,25 @@
 
 int b_search_rec(int *array, int left, int right, int val)
 {
-	int i;
+	int mid = left + (right - left) / 2;
 
-	if (right >= left)
+	printf("Searching in array: ");
+
+	int i = 0;
+
+	for (i = left; i <= right - 1; i++)
+		printf("%d, ", array[i]);
+	printf("%d\n", array[i]);
+
+	if (array[mid] == val)
+		return (mid);
+
+	if (right > left)
 	{
-		printf("Searching in array: ");
-
-		for (i = left; i <= right - 1; i++)
-		{
-			printf("%d, ", array[i]);
-		}
-
-		printf("%d\n", array[i]);
-
-		int mid = (left + (right - left) / 2);
-
-		if (array[mid] == val)
-		{
-			return (mid);
-		}
-
 		if (array[mid] > val)
-		{
 			return (b_search_rec(array, left, mid - 1, val));
-		}
-
-		return (b_search_rec(array, mid + 1, right, val));
+		else
+			return (b_search_rec(array, mid + 1, right, val));
 	}
 
 	return (-1);
