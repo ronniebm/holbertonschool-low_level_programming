@@ -16,12 +16,6 @@ int b_search_rec(int *array, int left, int right, int val)
 
 	printf("Searching in array: ");
 
-	int i = 0;
-
-	for (i = left; i <= right - 1; i++)
-		printf("%d, ", array[i]);
-	printf("%d\n", array[i]);
-
 	if (array[mid] == val)
 		return (mid);
 
